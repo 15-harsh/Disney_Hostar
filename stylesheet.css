@@ -1,0 +1,1209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    background: linear-gradient(to bottom,#131A27 8%, #0C111B);
+    position: relative;
+    font-family: roboto, sans-serif; 
+}
+
+.navbar{
+    width: 100%;
+    height: 80px;
+    position:fixed;
+    top: 0;
+    left: 0;
+    padding: 0 4%;
+    background: #131A27;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+}
+
+.menu-bar{
+    height: 20px;
+    width: 25px;
+    opacity: 1;
+    margin-top: 10px;
+}
+
+.brand-logo{
+    margin-top: 10px;
+    height: 80px;
+    width: 160px;
+}
+
+.nav-links{
+    margin-top: 10px;
+    display: flex;
+    list-style: none;
+}
+
+
+.nav-items a{
+    text-decoration: none;
+    margin-left: 20px;
+    text-transform: capitalize;
+    color: #fff;
+    opacity: 0.9;
+}
+
+.right-container{
+    display: block;
+    margin-left:auto;
+}
+
+.search-box{
+    border: none;
+    border-bottom: 1px solid #aaa;
+    background: transparent;
+    outline: none;
+    height: 30px;
+    color: #fff;
+    width: 250px;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.5s;
+    overflow-x: visible;
+}
+
+.mag-glass{
+    height: 15px;
+    width: 15px;
+    opacity: 0.7;
+}
+
+.search-box:focus{
+    width:400px;
+    border-color: #1f80e0;
+}
+
+.subscribe{
+    background: #1f80e0;
+    height: 23px;
+    padding: 0 10px;
+    color:#fff;
+    border-radius: 5px;
+    border:none;
+    outline:none;
+    text-transform:uppercase;
+    font-weight: 550;
+    font-size: 12px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.login{
+    color: #fff;
+    opacity: 0.9;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    padding-top: 10px;
+}
+
+.slider-container{
+    position: relative;
+    width: 100%;
+    height: 455px;
+    margin-top: 80px;
+    border-radius: 5px;
+}
+
+.slider{
+    display: flex;
+    width: 92%;
+    height:100%;
+    position: relative;
+    margin: auto;
+    background: #000;
+}
+
+.slider-items{
+    flex: 0 0 auto;
+    margin-right: 30px;
+    position: relative;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    width: 100%;
+    height:100%;
+    left:0;
+    transition: 1s;
+    overflow: hidden;
+}
+
+.slider-img{
+    width: 70%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+}
+
+.slider-content{
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    z-index: 6;
+    background: linear-gradient(to right, #030b17 30%, #0c111b00);
+    color: #fff;
+}
+
+.movie-title{
+    margin-top: 60px;
+    padding-left: 50px;
+    opacity: 0.9;
+}
+
+.movie-description{
+    width: 73%;
+    line-height: 30px;
+    padding-left: 50px;
+    margin-top: 20px;
+    opacity: 0.8;
+}
+
+.movie-setting{
+    width: 100%;
+    padding-left: 50px;
+    padding-top: 110px;
+}
+
+.play{
+    list-style: none;
+    display: flex;
+}
+
+.play-button{
+    height: 26px;
+    width: 21px;
+    padding-top: 2px;
+    opacity: 0.7;
+}
+
+.play-list{
+    padding-left: 20px;
+    opacity: 0.7;
+}
+
+.watchlist{
+    padding-left: 170px;
+    text-transform: uppercase;
+    opacity: 1;
+    padding-bottom: 100px;
+    line-height: 0px;
+}
+
+.plus{
+    font-size: 40px;
+    padding-left: 18px;
+    height: 35px;
+    padding-top: 10px;
+    margin-bottom: 0px;
+}
+
+.watchlist-text{
+    font-size: 11px;
+}
+
+.share{
+    padding-left:28px;
+}
+
+.share-logo{
+    height: 24px;
+    width: 24px;
+
+}
+
+.share-text{
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+.play-button:hover , .play-list:hover{
+    opacity: 1;
+}
+
+.available{
+    padding-left: 80px;
+    padding-top: 10px;
+    color: #fff;
+    font-size: 15px;
+    display: flex;
+    text-decoration: none;
+}
+
+.available-text{
+    opacity: 0.7;
+    padding-top: 10px;
+}
+
+.english-button {
+    align-items: center;
+    opacity: 0.7;
+    padding-left:10px;
+    background:#0C111B ;
+    border-radius: 25px;
+    border: 10px solid #0C111B;
+    color: #fff;
+    cursor: pointer;
+}
+
+.hindi-button{
+    align-items: center;
+    opacity: 0.7;
+    padding-left:10px;
+    background:#0C111B;
+    border-radius: 25px;
+    border: 10px solid #0C111B;
+    color: #fff;
+    cursor: pointer;
+}
+
+.hindi-button:focus, .english-button:focus{
+    align-items: center;
+    opacity: 1;
+    padding-left:10px;
+    background:#334366;
+    border-radius: 25px;
+    border: 10px solid #334366;
+    color: #fff;
+}
+
+.horizontal-line{
+    height: 0.1px;
+    margin-left: 3.5%;
+    margin-right: 3.5%;
+    border: none;
+    background: #fff;
+    opacity: 0.2;
+}
+
+.episodes-title{
+    text-decoration:none;
+    padding-left: 4%;
+    padding: 8px 30px;
+    color: #fff;
+    align-items: center;
+    width: 30%;
+    text-transform: capitalize;
+    font-weight: 550;
+    font-size: 18px;
+}
+
+
+.card-container{
+    padding: 60px 0px;
+    position: relative;
+    width: 92%;
+    padding-left: 10px;
+    height: 106px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    overflow-x: none;
+    overflow-y: visible;
+    scroll-behavior: smooth;
+}
+
+.card-container::-webkit-scrollbar{
+    display: none;
+}
+
+.card{
+    position: relative;
+    min-width: 187px;
+    width:187px;
+    height: 106px;
+    border-radius: 5px;
+    overflow:hidden;
+    margin-right: 10px;
+    transition: 0.5s;
+}
+
+.card-img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    position: relative;
+}
+
+.card:hover {
+    transform: scale(1.3);
+    z-index: 2;
+    cursor:pointer;
+}
+
+.card:hover .card-body{
+    opacity: 0.8;
+}
+
+.card:hover .card-name{
+    opacity: 0;
+}
+
+.card-body{
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: index 9;
+    background: linear-gradient(to bottom, rgba(4,8,15,0), #192133 60%);
+    padding: 6px;
+    transition: 0.6s;
+}
+
+.name{
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-top: 10%;
+    padding: 0 10px;
+    opacity: 1;
+    z-index: 9;
+}
+
+.card-name{
+    position: absolute;
+    top: 0;
+    color: #fff;
+    padding-top: 75px;
+    padding-bottom: 40px;
+    text-align: center;
+    font-size: 14px;
+    width: 100%;
+    font-weight: 500;
+    background: linear-gradient(to bottom, rgba(4,8,15,0)50%, #1d273f);
+}
+
+.des{
+    color: #fff;
+    margin: 5px 0;
+    font-size: 8px;
+    font-weight: 500;
+    opacity: 0.8;
+    padding: 0 10px;
+}
+
+.watchlist-btn{
+    position: relative;
+    width: 100%;
+    height: 20px;
+    text-transform: capitalize;
+    background: none;
+    border: none;
+    font-weight: 600;
+    text-align: left;
+    color: rgba(255,255,255,1);
+    cursor: pointer;
+    padding: 7px 30px;
+    border-radius: 5px;
+    font-size: 9px;
+}
+
+.watchlist-btn::before{
+    content: '';
+    position: absolute;
+    top: 2px;
+    left:10px;
+    height: 18px;
+    width:18px;
+    background-image: url(images/plus.png);
+    background-size: cover; 
+    transform: scale(0.6);
+    opacity: 1;
+}
+
+.watchlist-btn:hover{
+    color:#fff;
+    background: rgba(255,255,255,0.3);
+}
+
+/*movie style starts here*/
+
+.movie-container{
+    padding: 90px 0px;
+    position: relative;
+    width: 92%;
+    padding-left: 10px;
+    height: 184px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    overflow-x: none;
+    overflow-y: visible;
+    scroll-behavior: smooth;
+}
+
+.movie-container::-webkit-scrollbar{
+    display: none;
+}
+
+.movie-card{
+    position: relative;
+    min-width: 139px;
+    width:139px;
+    height: 184px;
+    border-radius: 5px;
+    overflow:hidden;
+    margin-right: 10px;
+    transition: 0.2s;
+}
+
+.movie-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.movie-card:hover {
+    transform: scale(1.2);
+    z-index: 4;
+}
+
+.movie-card:hover .movie-body{
+    opacity: 1;
+}
+
+.movie-body{
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index:2;
+    background: linear-gradient(to bottom, rgba(4,8,15,0), #192133 60%);
+    padding: 10px;
+    transition: 0.5s;
+}
+
+.movie-name{
+    color: #fff;
+    font-size: 10px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-top: 60%;
+    z-index: 4;
+}
+
+.movie-des{
+    color: #fff;
+    margin: 5px 0;
+    font-size: 8px;
+    font-weight: 500;
+    opacity: 0.8;
+    z-index: 4;
+}
+
+.movie-watchlist-btn{
+    position: relative;
+    width: 100%;
+    text-transform: capitalize;
+    background: none;
+    border: none;
+    font-weight: 600;
+    text-align: center;
+    color: rgba(255,255,255,0.5);
+    margin:5px 0;
+    cursor: pointer;
+    padding: 4px 5px;
+    border-radius: 5px;
+    font-size: 10px;
+}
+
+.movie-watchlist-btn::before{
+    content: '';
+    position: absolute;
+    top:-8px;
+    left:-5px;
+    height: 35px;
+    width:35px;
+    background-image: url(images/plus.png);
+    background-size: cover;
+    transform: scale(0.2);
+}
+
+.movie-watchlist-btn:hover{
+    color:#fff;
+    background: rgba(255,255,255,0.1);
+}
+
+.footer{
+    margin-top: 110px;
+    padding: 0px 50px;
+}
+
+.impt-link{
+    margin-bottom: 10px;    
+    width: 100%;
+    list-style: none;
+    display: flex;
+    opacity: 1;
+}
+
+.link-policy{
+    width:580px;
+}
+
+.footer-link{
+    display: flex;
+    width: 100%;
+}
+
+.footer-link-list{
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+    text-transform: capitalize;
+    margin: 10px 10px;
+    font-size: 14px;
+}
+
+.footer-link-list:hover{
+    color: #1680E0;
+}
+
+.policy{
+    width: 100%;
+    color: #fff;
+    font-size: 12px;
+    line-height: 21px;
+    margin: 10px 10px;
+    font-weight: 310;
+}
+
+.social{
+    padding-top: 5px;
+    padding-left: 65px;
+}
+
+.social-text{
+    color: #fff;
+    width:100%;
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+
+.facebook-icon{
+    height:40px;
+    width:40px;
+    background:#192133;
+    border-radius: 3px;
+}
+
+#facebook{
+    font-size: 25px;
+    padding-top: 8.5px;
+    padding-left:12.5px;
+    color: #B1C3D3;
+    opacity: 1;
+}
+
+.facebook-icon:hover{
+    background: #2555b7;
+    opacity: 1;
+}
+
+.facebook-icon:hover #facebook{
+    color: #fff;
+}
+
+.social-icon{
+    display: flex;
+}
+
+.empty{
+    padding:4px;
+}
+
+.twitter-icon{
+    height:40px;
+    width:40px;
+    background:#192133;
+    border-radius: 3px;
+}
+
+#twitter{
+    font-size: 25px;
+    padding-top: 8.5px;
+    padding-left:7.5px;
+    color: #B1C3D3;
+    opacity: 1;
+}
+
+.twitter-icon:hover{
+    background: #1DA1F2;
+    opacity: 1;
+}
+
+.twitter-icon:hover #twitter{
+    color: #fff;
+}
+
+.app-download{
+    padding-left: 105px;
+    width:350px;
+}
+
+.download-icon{
+    display:flexbox;
+}
+
+.download-text{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #fff;
+    opacity: 1;
+    font-size: 14px;
+    font-weight: 500;
+    width: 200px;
+}
+
+.playstore{
+    height: 30px;
+    width:auto;
+    padding-top: 5px;
+    padding-left: 12px; 
+}
+
+.playstore-background{
+    height: 35px;
+    width:130px;
+    background: #192133;
+    border-radius: 4px;
+}
+
+.playstore-background:hover{
+    background: #1DA1F2;
+}
+
+.apple{
+    height: 32px;
+    width: auto;
+    padding-top: 5px;
+    padding-left: 13px; 
+}
+
+.apple-background{
+    background:#192133;
+    height:35px;
+    width:130px;
+    border-radius: 4px;
+}
+
+.apple-background:hover{
+    background: #1DA1F2;
+}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Loki - Disney+ Hotstar
+        </title>
+        <link rel="shortcut icon" href="images/title logo.jpeg" type="image">
+        <link rel="stylesheet" href="stylesheet.css">
+        <script src="https://kit.fontawesome.com/d8ee8fbd1a.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <nav class="navbar">
+
+            <a href="#">
+                <img src="images/grey lines.png" class="menu-bar">
+            </a>
+
+            <a href="">
+                <img src="images/logo.png" alt="" class="brand-logo">
+            </a>
+
+            <ul class="nav-links">
+                <li class="nav-items"><a href="">TV</a></li>
+                <li class="nav-items"><a href="">Movies</a></li>
+                <li class="nav-items"><a href="">Sports</a></li>
+                <li class="nav-items"><a href="">Disney+</a></li>
+
+            </ul>
+
+            <div class="right-container">
+                <input type="text" class="search-box" placeholder="Search">
+                <img src="images/search.png" class="mag-glass">
+                <a href="https://www.hotstar.com/in/subscribe/get-started"><button class="subscribe">Subscribe</button></a>
+                <a href="#" class="login">Login</a>
+            </div>
+
+        </nav>
+
+        <a href="https://www.hotstar.com/in/tv/loki/1260063451/glorious-purpose/1260063525">
+            <div class="slider-container"> 
+
+                <div class="slider"> 
+
+                    <div class="slider-items">
+
+                        <div class="slider-content">
+
+                            <h1 class="movie-title">Loki</h1>
+
+                            <div class="movie-description">
+                                <h4>1 Season &sdot; 6 Episodes &sdot; Superhero &sdot; U/A 13+ &sdot; Marvel</h4>
+                            </div>
+
+                            <p class="movie-description">The mercurial villian Loki resumes his role as the God of Mischief in a new series that takes place after the events of "Avengers:Endgame."</p>
+
+                            <div class="movie-setting">
+
+                                <ul class="play">
+
+                                    <li><img src="images/play.png" alt="play" class="play-button"></li>
+                                    <li class="play-list">
+                                        <h4>Watch First Episode</h4>
+                                        <p>S1 E1 &sdot; 9 Jun 2021</p>
+                                    </li>
+                                    <li class="watchlist">
+                                        <p class="plus">+</p>
+                                        <p class="watchlist-text">watchlist</p>
+                                    </li>
+                                    <li class="share">
+                                        <img src="images/share.png" alt="share" class="share-logo">
+                                        <p class="share-text">Share</p>
+                                    </li>
+
+                                </ul>
+                                
+                            </div>
+                            
+                        </div>
+
+                        <img src="images/loki-slider.png" alt="#" class="slider-img"> 
+
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <div class="available">
+
+            <p class="available-text">
+                Available In:&nbsp;
+            </p>
+            <button class="english-button" type="button">English</button>
+            <button class="hindi-button" type="button">हिन्दी</button>
+
+        </div>
+
+        <hr class="horizontal-line">
+
+        <div class="episodes-title">
+            <h2><a href="#" class="episodes-title">Episodes</a></h2>
+        </div>
+
+        <div class="card-container">
+
+            <a href="https://www.hotstar.com/in/tv/loki/1260063451/glorious-purpose/1260063525">
+                <div class="card">
+
+                    <img src="images/epi1.png" alt="" class="card-img">
+
+                    <div class="card-name">
+                        <h2 class="card-name">&#10148; S1 E1 &sdot; 9 Jun 2021</h2>
+                    </div>
+
+                    <div class="card-body">
+
+                        <h2 class="name">&#10148; S1 E1 &sdot; 9 Jun 2021</h2>
+                        <h6 class="des">After stealing the Tesseract in “Avengers: Endgame,” Loki lands before the Time Variance Authority.</h6>
+                        <button class="watchlist-btn">add to watchlist</button>
+
+                    </div>
+
+                </div>
+            </a>
+
+            <a href="https://www.hotstar.com/in/tv/loki/1260063451/glorious-purpose/1260063525">
+                <div class="card">
+
+                    <img src="images/epi2.png" alt="" class="card-img">
+
+
+                    <div class="card-name">
+                        <h2 class="card-name">&#10148; S1 E2 &sdot; 16 Jun 2021</h2>
+                    </div>
+                    
+                    <div class="card-body">
+
+                        <h2 class="name">&#10148; S1 E2 &sdot; 16 Jun 2021</h2>
+                        <h6 class="des">Mobius puts Loki to work, but not everyone at TVA is thrilled about the God of Mischief's presence.</h6>
+                        <button class="watchlist-btn">add to watchlist</button>
+
+                    </div>
+
+                </div>
+            </a>
+
+            <a href="https://www.hotstar.com/in/tv/loki/1260063451/glorious-purpose/1260063525">
+                <div class="card">
+
+                    <img src="images/epi3.png" alt="" class="card-img">
+
+                    <div class="card-name">
+                        <h2 class="card-name">&#10148; S1 E3 &sdot; 23 Jun 2021</h2>
+                    </div>
+
+                    <div class="card-body">
+
+                        <h2 class="name">&#10148; S1 E3 &sdot; 23 Jun 2021</h2>
+                        <h6 class="des">Loki finds out The Variant’s plans, but he has his own that will forever alter both their destinies.</h6>
+                        <button class="watchlist-btn">add to watchlist</button>
+
+                    </div>
+
+                </div>
+            </a>
+
+            <a href="https://www.hotstar.com/in/tv/loki/1260063451/glorious-purpose/1260063525">
+                <div class="card">
+
+                    <img src="images/epi4.png" alt="" class="card-img">
+
+                    <div class="card-name">
+                        <h2 class="card-name">&#10148; S1 E4 &sdot; 30 Jun 2021</h2>
+                    </div>
+
+                    <div class="card-body">
+
+                        <h2 class="name">&#10148; S1 E4 &sdot; 30 Jun 2021</h2>
+                        <h6 class="des">Frayed nerves and paranoia infiltrate the TVA as Mobius and Hunter B-15 search for Loki and Sylvie.</h6>
+                        <button class="watchlist-btn">add to watchlist</button>
+
+                    </div>
+
+                </div>
+            </a>
+
+            <a href="https://www.hotstar.com/in/tv/loki/1260063451/glorious-purpose/1260063525">
+                <div class="card">
+
+                    <img src="images/epi5.png" alt="" class="card-img">
+
+                    <div class="card-name">
+                        <h2 class="card-name">&#10148; S1 E5 &sdot; 7 Jul 2021</h2>
+                    </div>
+
+                    <div class="card-body">
+
+                        <h2 class="name">&#10148; S1 E5 &sdot; 7 Jul 2021</h2>
+                        <h6 class="des">Loki tries to escape The Void, a desolate purgatory where he meets variant versions of himself.</h6>
+                        <button class="watchlist-btn">add to watchlist</button>
+
+                    </div>
+
+                </div>
+            </a>
+
+            <a href="https://www.hotstar.com/in/tv/loki/1260063451/glorious-purpose/1260063525">
+                <div class="card">
+
+                    <img src="images/epi6.png" alt="" class="card-img">
+
+                    <div class="card-name">
+                        <h2 class="card-name">&#10148; S1 E6 &sdot; 14 Jun 2021</h2>
+                    </div>
+
+                    <div class="card-body">
+                        <h2 class="name">&#10148; S1 E6 &sdot; 14 Jul 2021</h2>
+                        <h6 class="des">The clock is ticking in the season finale which finds Loki and Sylvie on a date with destiny.</h6>
+                        <button class="watchlist-btn">add to watchlist</button>
+
+                    </div>
+
+                </div>
+            </a>
+
+        </div>
+
+        <div class="episodes-title">
+            <h2><a href="#" class="episodes-title">popular clips</a></h2>
+        </div>
+
+        <div class="card-container">
+
+            <a href="https://www.hotstar.com/in/loki-trailer/1260063654">
+                <div class="card">
+
+                    <img src="images/trailer.png" alt="" class="card-img">
+
+                    <div class="card-name">
+                        <h2 class="card-name">&#10148; Loki - Trailer</h2>
+                    </div>
+
+                    <div class="card-body">
+                        <h2 class="name">&#10148; Loki - Trailer</h2>
+                        <h6 class="des">The mercurial villain Loki resumes his role as the God of Mischief. Premiering on 9th June 2021 excl ...</h6>
+                        <button class="watchlist-btn">add to watchlist</button>
+
+                    </div>
+                    
+                </div>
+            </a>
+
+            <a href="https://www.hotstar.com/in/loki-hindi-trailer/1260063636">
+                <div class="card">
+
+                    <img src="images/hindi trailer.png" alt="" class="card-img">
+
+                    <div class="card-name">
+                        <h2 class="card-name">&#10148; Loki - hindi Trailer</h2>
+                    </div>
+
+                    <div class="card-body">
+
+                        <h2 class="name">&#10148; Loki - hindi Trailer</h2>
+                        <h6 class="des">The mercurial villain Loki resumes his role as the God of Mischief. Premiering on 9th June 2021 excl ...</h6>
+                        <button class="watchlist-btn">add to watchlist</button>
+
+                    </div>
+
+                </div>
+            </a>
+
+        </div>
+
+        <div class="episodes-title">
+            <h2><a href="#" class="episodes-title">more like this</a></h2>
+        </div>
+
+        <div class="movie-container">
+
+            <a href="https://www.hotstar.com/in/tv/marvels-agents-of-shield/1260027620">
+                <div class="movie-card">
+
+                    <img src="images/agent of shield.png" alt="" class="movie-img">
+
+                    <div class="movie-body">
+
+                        <h2 class="movie-name">Marvel's Agents of S.H.I.E.L.D.</h2>
+                        <h6 class="movie-des">Agent Phil Coulson leads a team of highly skilled agents from the S.H.I.E.L.D. Together, they combat ...</h6>
+                        <button class="movie-watchlist-btn">add to watchlist</button>
+
+                    </div>
+
+                </div>
+            </a>
+
+            <a href="https://www.hotstar.com/in/tv/the-falcon-and-the-winter-soldier/1260055670">
+                <div class="movie-card">
+
+                    <img src="images/falcon.png" alt="" class="movie-img">
+
+                    <div class="movie-body">
+
+                        <h2 class="movie-name">The Falcon and The Winter Soldier</h2>
+                        <h6 class="movie-des">Following the events of “Avengers: Endgame,” Sam Wilson and Bucky Barnes team up in a global adventure...</h6>
+                        <button class="movie-watchlist-btn">add to watchlist</button>
+
+                    </div>
+
+                </div>
+            </a>
+
+            <a href="https://www.hotstar.com/in/tv/wandavision/1260051344">
+                <div class="movie-card">
+
+                    <img src="images/Wanda vison.png" alt="" class="movie-img">
+
+                    <div class="movie-body">
+
+                        <h2 class="movie-name">WandaVison</h2>
+                        <h6 class="movie-des">Wanda Maximoff and Vision—two super-powered beings living idealized suburban lives—begin to suspect  ...</h6>
+                        <button class="movie-watchlist-btn">add to watchlist</button>
+
+                    </div>
+
+                </div>
+            </a>
+
+            <a href="https://www.hotstar.com/in/tv/hawkeye/1260073683">
+                <div class="movie-card">
+
+                    <img src="images/Hawkye.png" alt="" class="movie-img">
+
+                    <div class="movie-body">
+
+                        <h2 class="movie-name">Hawkeye</h2>
+                        <h6 class="movie-des">Clint Barton/Hawkeye must team up with skilled archer Kate Bishop to unravel a criminal conspiracy.</h6>
+                        <button class="movie-watchlist-btn">add to watchlist</button>
+
+                    </div>
+
+                </div>
+            </a>
+
+            <a href="https://www.hotstar.com/in/tv/ms-marvel/1260098459">
+                <div class="movie-card">
+
+                    <img src="images/Ms.Marvel.png" alt="" class="movie-img">
+
+                    <div class="movie-body">
+
+                        <h2 class="movie-name">Ms. Marvel</h2>
+                        <h6 class="movie-des">Kamala Khan, a Muslim American teen growing up in Jersey City, is a Superhero mega fan who discovers ...</h6>
+                        <button class="movie-watchlist-btn">add to watchlist</button>
+
+                    </div>
+
+                </div>
+            </a>
+
+            <a href="https://www.hotstar.com/in/tv/marvels-daredevil/1260091261">
+                <div class="movie-card">
+
+                    <img src="images/daredevil.png" alt="" class="movie-img">
+
+                    <div class="movie-body">
+
+                        <h2 class="movie-name">Marvel's Daredevil</h2>
+                        <h6 class="movie-des">Blinded as a young boy, Matt Murdock fights injustice by day as a lawyer and by night as the Super H ...</h6>
+                        <button class="movie-watchlist-btn">add to watchlist</button>
+
+                    </div>
+
+                </div>
+             </a>
+
+            <a href="https://www.hotstar.com/in/tv/what-if/1260066057">
+                <div class="movie-card">
+
+                    <img src="images/what if .png" alt="" class="movie-img">
+
+                    <div class="movie-body">
+
+                        <h2 class="movie-name">What If...?</h2>
+                        <h6 class="movie-des">What If…? flips the script on the MCU, reimagining famous events from the films in unexpected ways.</h6>
+                        <button class="movie-watchlist-btn">add to watchlist</button>
+
+                    </div>
+
+                </div>
+            </a>
+
+            <a href="https://www.hotstar.com/in/tv/marvels-agent-carter/1260027615">
+                <div class="movie-card">
+
+                    <img src="images/agent carter.png" alt="" class="movie-img">
+
+                    <div class="movie-body">
+
+                        <h2 class="movie-name">Marvel's Agent Carter</h2>
+                        <h6 class="movie-des">1946. Working for the covert SSR, Peggy finds herself doing administrative work when she would rathe ...</h6>
+                        <button class="movie-watchlist-btn">add to watchlist</button>
+
+                    </div>
+
+                </div>
+            </a>
+
+        </div>
+
+    </body>
+
+    <footer class="footer">
+
+        <div class="impt-link">
+
+            <ul class="impt-link">
+
+                <li class="link-policy">
+
+                    <ul class="footer-link">
+
+                        <a href="https://www.hotstar.com/in/about-us" class="footer-link-list" target="_blank"><li>about disney+ hotstar</li></a>
+                        <a href="https://www.hotstar.com/in/terms-of-use" class="footer-link-list" target="_blank"><li>terms of use</li></a>
+                        <a href="https://www.hotstar.com/in/privacy-policy" class="footer-link-list" target="_blank"><li>privacy policy</li></a>
+                        <a href="https://help.hotstar.com/in/en/support/home" class="footer-link-list" target="_blank"><li>FAQ</li></a>
+                        <a href="https://www.hotstar.com/in/privacy-policy" class="footer-link-list" target="_blank"><li>feedback</li></a>
+                        <a href="https://jobs.lever.co/hotstar" class="footer-link-list" target="_blank"><li>careers</li></a>
+
+                    </ul>
+
+                    <div class="policy">
+
+                        <p>&copy;2022 STAR. All Rights Reserved. HBO, Home Box Office and all related channel and programming logos are service marks of, and all related programming visuals and elements are the property of, Home Box Office, Inc. All rights reserved.</p>
+
+                    </div>
+
+                </li>
+
+                <li class="social">
+
+                    <div class="social">
+
+                        <p class="social-text">Connect with us</p>
+                        
+                        <div class="social-icon">
+
+                            <a href="https://www.facebook.com/DisneyPlusHotstar/" target="_blank">
+                                <div class="facebook-icon">
+                                    <i class="fa-brands fa-facebook-f" id="facebook"></i>
+                                </div>
+                            </a>
+
+                            <div class="empty"></div>
+
+                            <a href="https://twitter.com/DisneyPlusHS?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
+                                <div class="twitter-icon">
+                                    <i class="fa-brands fa-twitter" id="twitter"></i>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </li>
+
+                <li class="app-download">
+
+                    <p class="download-text">Disney+ Hotstar App</p>
+
+                    <div class="flex">
+
+                        <div class="dowload-icon">
+
+                            <a href="https://play.google.com/store/apps/details?id=in.startv.hotstar">
+                                <div class="playstore-background">
+                                    <img src="images/playstore.png" class="playstore" alt="playstore">
+                                </div>
+                            </a>
+
+                            <div class="empty"></div>
+
+                            <a href="https://play.google.com/store/apps/details?id=in.startv.hotstar">
+                                <div class="apple-background">
+                                    <img src="images/apple.png" class="apple" alt="applestore">
+                                </div>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </footer>
+
+</html>
